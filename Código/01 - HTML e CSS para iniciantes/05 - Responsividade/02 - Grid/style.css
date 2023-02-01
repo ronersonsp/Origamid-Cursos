@@ -1,0 +1,33 @@
+@charset "UTF-8";
+ 
+img{
+  width: 100%;
+  display: block;
+}
+.main{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+}
+.main h1{
+  grid-column: 1 / -1;
+}
+.galeria{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+.galeria h2{
+  grid-column: 1 / -1;
+  justify-self: center;
+}
+
+@media (min-width: 900px){
+  /* 
+  Order só altera a ordem visual, um leitor de tela ainda vai ler pela ordem do html. 
+  */
+  .minmax img{
+    order: 2;
+  }
+  
+}

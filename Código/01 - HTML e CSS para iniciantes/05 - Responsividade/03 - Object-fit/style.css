@@ -1,0 +1,24 @@
+@charset "UTF-8";
+ 
+img{
+  max-width: 100%;
+  display: block;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.cover img{
+  height: 100%;
+  object-fit: cover;
+  object-position: top right;
+  /* "object-position" indica qual parte da imagem vc qr manter */
+}
+.texto{
+  font-size: 1.3rem;
+  max-width: 60ch;
+}

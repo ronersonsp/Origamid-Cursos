@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/* amarelo 1: #febe01
+   amarelo 2: #3332200
+*/
+
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.produto{
+  padding: 20px;
+  margin: 30px;
+  margin-bottom: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #111;
+  border-radius: 4px;
+  max-width: 1000px;
+  height: 180px;
+ }
+.produto > p {
+  color: #b2b2b2;
+}
+.produto > h2 {
+  margin: 0px;
+  color: white;
+}
+.produto > .buy{
+  margin-top: 40px;
+  display: inline-block;
+  color: #332200;
+  font-weight: bold;
+  border-radius: 4px;
+  background-color: #febe01;
+  text-decoration: none;
+  padding: 10px;
+}
+.destaque-text{
+  color: #bb9628;
+}
+.destaque-title{
+  color: #febe01;
+}

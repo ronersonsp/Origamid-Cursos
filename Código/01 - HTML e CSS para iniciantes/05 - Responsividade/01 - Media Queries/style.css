@@ -1,0 +1,54 @@
+@charset "UTF-8";
+ img{
+  max-width: 500px;
+  display: block;
+ }
+
+.main{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+.main h1{
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 600px){
+  /* Abaixo de 600px, vai aplicar o efeito abaixo */
+  .main{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px), (min-width: 900px){
+  /* Entre 700 e 900px, não vai aplicar o efeito abaixo */
+  .main h1{
+    background-color: aqua;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 900px){
+  /* Entre 900 e 1200px, vai aplicar o efeito abaixo */
+  .main p{
+    background-color: aquamarine;
+  }
+}
+
+
+/* Favor usar "CTRL + P" para ver o resultado abaixo. */
+@media screen {
+  /* O fundo do site vai ser rosa, porém ao tirar print, ele não vai aparecer com fundo rosa, já q estamos mechendo somente na tela. */
+  body{
+    background-color: pink;
+  }
+}
+
+@media print {
+  /* O fundo do site vai continuar o mesmo, porém ao tirar print, ele vai ficar roxo. */
+  .main p{
+    color: aqua;
+    /* 
+    Ainda não descobri o motivo de não conseguir alterar a cor do background do body, nem do main, e nem do p. 
+    */
+  }
+}

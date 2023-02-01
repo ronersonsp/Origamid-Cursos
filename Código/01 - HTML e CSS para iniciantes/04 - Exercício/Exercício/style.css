@@ -1,0 +1,99 @@
+@charset "UTF-8";
+html{
+  width: 100%;
+}
+ body{
+  display: grid;
+  /* place-content: center; */
+  justify-items: center;
+  width: 100vw;
+  background-color: #F7F7F7;
+  font-family: Arial;
+  gap: 30px;
+ }
+
+ h1{
+  margin-top: 50px;
+  text-align: center;
+ }
+nav{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+a{
+  color: black;
+  border-radius: 4px;
+  text-decoration: none;
+  background-color: white;
+  padding: 15px 30px;
+}
+
+a:hover{
+  color: white;
+  background-color: #EE2211;
+  transition: 0.5s;
+}
+button{
+  color: black;
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 4px;
+  text-decoration: none;
+  background-color: white;
+  padding: 15px;
+}
+button:hover{
+  color: white;
+  background-color: #EE2211;
+  transition: 0.5s;
+}
+
+
+.container{
+  display: grid;
+  grid-template-columns: 500px 500px;
+}
+.bicicleta-texto{
+  text-align: right;
+  font-size: 20px;
+  padding: 15px;
+  background-color: white;
+  max-width: 500px;
+}
+.bicicleta{
+  max-width: 500px;
+}
+.vantagens_texto{
+  font-size: 55px;
+  text-align: right;
+  padding-right: 20px;
+  color: rgba(160, 160, 160, 0.774);
+}
+.vantagens{
+  padding: 20px;
+  background-color: white;
+}
+.vantagens-item{
+  display: grid;
+  place-content: center;
+  grid-template-columns: 50px 1fr;
+}
+.vantagens-item > img{
+  place-self: center;
+  /* align-self: center; */
+  /* justify-self: center; */
+}
+.vantagens-item > p{
+  font-size: 20px;
+  grid-column: 2;
+}
+
+
+footer{
+  width: 100vw;
+  text-align: center;
+  font-size: calc(.8vh + .7vw);
+  padding: 50px;
+  background-color: white;
+}
