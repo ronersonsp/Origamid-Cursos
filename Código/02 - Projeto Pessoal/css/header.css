@@ -21,6 +21,11 @@
   padding: 10px 20px;
   color: #141414;
   display: block;
+  border: 2px solid transparent;
+}
+.header-menu a:hover{
+  border-color: #141414;
+  border-radius: 5px;
 }
 
 @media (max-width: 800px){

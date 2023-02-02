@@ -1,26 +1,107 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ronerson - Desenvolvedor Front-End</title>
   <link rel="stylesheet" href="./css/style.css">
+
 </head>
- 
+
 <body>
-<header class="header">
-  <img src="img/Ronerson.svg" alt="Ronerson">
-  <nav>
-    <ul class="header-menu">
-      <li><a href="#experiencia">Experiência</a></li>
-      <li><a href="#formacao">Formação</a></li>
-      <li><a href="#contato">Contato</a></li>
-    </ul>
-  </nav>
-</header>
+  <header class="header">
+    <img src="img/Ronerson.svg" alt="Ronerson">
+    <nav>
+      <ul class="header-menu">
+        <li><a href="#experiencia">Experiência</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container introducao">
+    <h1>Desenvolvedor<br>Front End</h1>
+    <p>Localizado em São Mateus - ES</p>
+  </main>
+
+  <section class="container experiencia" id="experiencia" aria-label="Experiência">
+    <h2 class="subtitulo">Experiência</h2>
+    <div class="ano">
+      <div class="detalhe-ano">
+        <span>2023</span>
+        <br id="agua">
+        <span>Atual</span>
+      </div>
+      <div class="empresa">
+        <h3 class="empresa-titulo">Front End Mentor</h3>
+        <span class="empresa-titulo">Estudante</span>
+        <p class="empresa-texto">Fiz alguns projetos pelo <strong>Front End Mentor</strong>, você pode conferir eles no meu GitHub.</p>
+        <ul class="empresa-habilidade">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="formacao" id="formacao" aria-label="Formação">
+    <div class="container formacao-container">
+      <h2 class="subtitulo">Formação</h2>
+
+      <div class="formacao-container-texto">
+        <p class="formacao-texto">Minha mais recente experiência acadêmica foi uma faculdade que fiz na <strong>Multivix</strong>, e atualmente estou fazendo os cursos do <strong>Origamid</strong>.</p>
+
+        <ul class="faculdade-lista">
+          <li class="faculdade">
+            <span class="faculdade-tipo">TECNÓLOGO</span>
+            <span class="faculdade-instituicao">Multivix</span>
+            <h3 class="faculdade-curso">Análise e Desenvolvimento de Sistemas</h3>
+            <span class="data">01/01/2021 - 31/12/2022</span>
+          </li>
+        </ul>
+        <div class="formacao-extra">
+          <div class="idiomas">
+            <h3>IDIOMAS</h3>
+            <ul>
+              <li>Inglês <span>/ Fluente</span></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="contato">
+    <div class="container footer-container">
+      <p class="footer-texto">Estou disponível para novos projetos. Entre em contato para marcarmos uma conversa.</p>
+      <ul class="footer-contato">
+        <li>ronersonsprando@gmail.com</li>
+        <li>+55 27 999273846</li>
+        <li class="footer-social">
+          <span>
+            <a href="https://github.com/ronersonsp">
+              <img src="img/github.svg" alt="github">
+            </a>
+          </span>
+
+          <span>
+            <a href="https://www.linkedin.com/in/ronerson-de-souza-prando-882071142/">
+            <img src="img/linkedin.svg" alt="linkedin">
+          </a>
+          </span>
+        </li>
+      </ul>
+      <p class="footer-copy">Ronerson. Alguns direitos reservados</p>
+    </div>
+  </footer>
 </body>
- 
- 
+
+
 <script src="js.js"></script>
+
 </html>
