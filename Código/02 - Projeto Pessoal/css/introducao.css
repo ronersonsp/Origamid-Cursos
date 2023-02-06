@@ -50,3 +50,18 @@
   font-size: 1.2rem;
  }
 }
+
+@media (max-width: 400px){
+  .introducao h1{
+    font-size: 2.5rem;
+    line-height: 40px;
+  }
+  .introducao h1::before{
+    width: 40px;
+    height: 40px;
+      left: auto;
+       top: auto;
+      right: 65px;
+      bottom: 5px;
+  }
+}
