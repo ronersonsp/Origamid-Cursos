@@ -1,0 +1,28 @@
+.introducao-bg{
+  background-color: var(--c14);
+  color: var(--w);
+  box-shadow: inset 0 -120px var(--w);
+}
+.introducao{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 40px;
+}
+.introducao h1{
+  margin-bottom: 32px;
+}
+.introducao p{
+  margin-bottom: 20px;
+}
+.introducao img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+
+.introducao-conteudo{
+  align-self: end;
+  padding-bottom: 200px;
+}
