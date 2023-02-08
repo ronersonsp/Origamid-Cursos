@@ -1,0 +1,53 @@
+.perguntas {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.perguntas h2{
+  margin-bottom: 60px;
+}
+
+.perguntas dl > div{
+  padding: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.perguntas dl > div:nth-child(odd){
+  background-color: var(--c1);
+}
+
+.perguntas dt{
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 8px;
+}
+.perguntas dt::before{
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 20px;
+  background-color: var(--p1);
+}
+.perguntas dt::after{
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 7px;
+  background: url(../../img/icones/dec/detalhe-setinha.svg);
+}
+.perguntas dd{
+  padding-left: 12px;
+  padding-top: 16px;
+  max-width: 80ch;
+}
+
+@media (max-width:800px){
+  .perguntas{
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .perguntas h2{
+    margin-bottom: 40px;
+  }
+}
