@@ -1,7 +1,7 @@
 .depoimento{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: var(--p1);
+  background: var(--p1);
   overflow: hidden;
 }
 .depoimento img{
@@ -15,7 +15,7 @@
   padding: 40px 40px 80px 80px;
   align-self: end;
 }
-.depoimento p{
+.depoimento-conteudo p{
   max-width: 32ch;
   font-family: "Merriweather", serif;
   font-style: italic;
@@ -39,6 +39,12 @@
 .depoimento p::after{
   content: "”";
   bottom: -72px;
+}
+
+@media (min-width: 1200px){
+  .depoimento img{
+    max-height: 520px;
+  }
 }
 
 @media (max-width:800px){
