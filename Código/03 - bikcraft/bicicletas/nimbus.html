@@ -8,11 +8,12 @@
   <title>Nimbus Stark | Bikcraft</title>
   <meta name="description" content="A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style.min.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 
 <body id="bicicleta">
@@ -36,17 +37,17 @@
         <h1>
     </div>
 
-    <div class="bicicleta">
+    <div class="bicicleta container">
       <div class="bicicleta-img">
-        <img src="../img/bicicleta/nimbus-560.jpg" alt="">
-        <img src="../img/bicicleta/might-560.jpg" alt="">
-        <img src="../img/bicicleta/nebula-560.jpg" alt="">
+        <img src="../img/bicicleta/might-560.jpg" alt="Bicicleta Magic Preta">
+        <img src="../img/bicicleta/nimbus-560.jpg" alt="Bicicleta Nimbus Preta">
+        <img src="../img/bicicleta/nebula-560.jpg" alt="Bicicleta Nebula Branca">
       </div>
 
       <div class="bicicleta-conteudo">
         <p class="font-2-l c5">A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.</p>
         <div class="bicicleta-comprar">
-          <a class="botao" href="../orçamento.html">Comprar agora</a>
+          <a class="botao" href="../orçamento.html?tipo=bikcraft&produto=nimbus">Comprar agora</a>
           <span class="font-1-xs c6"><img src="../img/icones/dec/entrega.svg" alt=""> entrega em 5 dia</span>
           <span class="font-1-xs c6"><img src="../img/icones/dec/estoque.svg" alt=""> 18 em estoque</span>
 
@@ -117,13 +118,13 @@
   <article class="seguro-bg">
     <div class="seguro container">
       <div class="seguro-img">
-        <img src="../img/fotos gerais/seguros.jpg" alt="Uma pessoa tranquila em cima de sua bicicleta">
+        <img src="../img/fotos-gerais/seguros.jpg" alt="Uma pessoa tranquila em cima de sua bicicleta">
       </div>
 
       <div class="seguro-conteudo">
         <h2 class="font-1-xxl w">Pedale mais tranquilo com nosso <span class="p1">seguro.</span></h2>
         <p class="font-2-l c5">Inscreva-se em um dos planos do nosso seguro Bikcraft e aproveite diversos benefícios.</p>
-        <a class="botao" href="../seguros.html">Conheça Mais</a>
+        <a class="botao" href="../seguros.html?tipo=seguro">Conheça Mais</a>
       </div>
     </div>
   </article>
@@ -170,9 +171,11 @@
 
   </footer>
 
+  <script src="../js/script.js"></script>
 </body>
 
 
-<script src="js.js"></script>
+
+
 
 </html>
