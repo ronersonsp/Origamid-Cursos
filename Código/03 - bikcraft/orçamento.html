@@ -8,12 +8,13 @@
   <title>Orçamento | Bikcraft</title>
   <meta name="description" content="Faça seu orçamento conosco">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="preload" href="./css/style.css" as="style">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preload" href="./css/style.min.css" as="style">
+  <link rel="stylesheet" href="./css/style.min.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 
 <body id="orcamento">
@@ -38,7 +39,7 @@
       </div>
     </div>
 
-    <form class="orcamento container" action="./">
+    <form class="orcamento container" action="./enviar.php" method="post">
       <div class="orcamento-produto">
         <h2 class="font-1-xs c5">Bikcraft ou Seguro?</h2>
         <input type="radio" name="tipo" value="bikcraft" id="bikcraft">
@@ -114,7 +115,7 @@
         </div>
         <div class="col-2">
           <label for="email">Email</label>
-          <input type="email" id="email" name="email">
+          <input type="email" id="email" name="email" required aria-required="true">
         </div>
 
         <h2 class="font-1-xs c9 col-2">Entrega</h2>
@@ -192,9 +193,12 @@
 
   </footer>
 
+  <script src="./js/script.js"></script>
+  <script src="./js/formulario.js"></script>
 </body>
 
 
-<script src="js.js"></script>
+
+
 
 </html>

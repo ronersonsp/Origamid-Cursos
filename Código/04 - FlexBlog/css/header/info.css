@@ -1,0 +1,14 @@
+.info-bg{
+  background-color: #122ab2;
+  color: white;
+}
+
+.info{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.info a{
+  color: white;
+}

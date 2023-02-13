@@ -1,0 +1,1 @@
+Esse foi um projeto feito usando somente flexbox, não foi focado no design do site em si, mas sim no ensinamento.
