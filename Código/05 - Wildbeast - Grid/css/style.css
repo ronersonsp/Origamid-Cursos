@@ -1,0 +1,9 @@
+@import "./global/global.css";
+@import "./grid/estrutura.css";
+@import "./global/utilidades.css";
+@import "./conteudo/header.css";
+@import "./conteudo/sidenav.css";
+@import "./conteudo/anuncio.css";
+@import "./conteudo/footer.css";
+@import "./conteudo/content.css";
+@import "./conteudo/caracteristicas.css";

@@ -1,0 +1,52 @@
+.sidenav{
+  background-color: #fafbfc;
+  padding: 30px;
+}
+.sidenav li a{
+  display: block;
+  min-width: 60px;
+  max-width: 100px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+  transition: .2s ease-out;
+}
+
+.sidenav li a:hover{
+  background-color: var(--p1);
+}
+@keyframes seta {
+  from{
+    right: 30px;
+  }
+  to {
+    right: 20px;
+  }
+}
+
+@media(max-width: 760px){
+  .sidenav{
+    padding: 0 auto;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    position: relative;
+  }
+  .sidenav::after{
+    content: "→";
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    color: rgba(0, 0, 0, .4);
+    animation: seta .5s ease-in 0s infinite alternate;
+  }
+  .sidenav ul{
+    display: flex;
+    gap: 30px;
+  }
+  .sidenav ul li{
+    flex: 1 0 60px;
+  }
+}

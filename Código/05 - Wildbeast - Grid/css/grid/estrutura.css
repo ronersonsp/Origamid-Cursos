@@ -1,0 +1,49 @@
+.estrutura{
+  display: grid;
+  grid-template-columns: minmax(160px, 1fr) 3fr 300px;
+  grid-template-areas: 
+    "header header header"
+    "sidenav content anuncio"
+    "footer footer footer"
+  ;
+}
+
+.header{
+  grid-area: header;
+}
+.sidenav{
+  grid-area: sidenav;
+}
+.content{
+  grid-area: content;
+}
+.anuncio{
+  grid-area: anuncio;
+}
+.footer{
+  grid-area: footer;
+}
+
+@media(max-width: 1200px){
+  .estrutura{
+    grid-template-areas: 
+    "header header header"
+    "sidenav content content"
+    "sidenav anuncio anuncio"
+    "footer footer footer"
+    ;
+  }
+}
+
+@media(max-width: 760px){
+  .estrutura{
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "sidenav"
+    "content"
+    "anuncio"
+    "footer"
+    ;
+  }
+}

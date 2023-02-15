@@ -1,0 +1,10 @@
+:root{
+  --p1: #B07DFB;
+  --p2: #8844ee;
+  --bg1: linear-gradient(135deg, var(--p2), var(--p1));
+  --shadow: 5px 5px 15px 0px rgba(44, 44, 44, .15);
+}
+
+.bg{
+  background: var(--bg1);
+}

@@ -1,0 +1,11 @@
+.anuncio{
+  background-color: #fafbfc;
+  display: grid;
+  align-content: start;
+  gap: 15px;
+  padding: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+.anuncio-img img{
+  height: 100%;
+}
