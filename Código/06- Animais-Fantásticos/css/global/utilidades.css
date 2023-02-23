@@ -1,3 +1,8 @@
+.grid-container{
+  display: grid;
+  grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
+}
+
 .container{
   grid-column: 2 / 4;
   width: 100%;
@@ -19,6 +24,9 @@
 
 
 @media(max-width: 700px){
+  .grid-container{
+    grid-template-columns: 1fr;
+  }
   .container{
     grid-column: 1;
     grid-template-columns: 100px 1fr;
@@ -27,4 +35,15 @@
   .titulo{
     font-size: 3rem;
   }
+}
+
+
+.js [data-anime="scroll"]{
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: .5s;
+}
+.js [data-anime="scroll"].ativo{
+  opacity: 1;
+  transform: translate3d(30px, 0, 0);
 }
