@@ -5,6 +5,7 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
   background-color: var(--p1);
+  padding: 5px;
 }
 
 .menu ul{
